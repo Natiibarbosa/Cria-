@@ -115,14 +115,23 @@ header {
   .cards {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
-
+ 
   .card {
     width: 90%; /* Faz os cards ocuparem quase toda a largura no mobile */
     height: auto; /* Deixa a altura se ajustar automaticamente */
   }
 
+   .frase {
+    text-align: center;
+    margin-top: 120px;
+    padding: 0 10px;
+   }
 
+   .frase h1 {
+    font-size: 1.3rem;
+   }
     .nav-menu {
         position: absolute;
         top: 105px;
@@ -135,6 +144,11 @@ header {
         text-align: center;
         transition: left 0.3s ease-in-out;
     }
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     .frase {
       font-size: 1rem;
       padding: 0 10px;
@@ -143,9 +157,14 @@ header {
 
    .logo {
     width: 225px;
-    height: 200px;
+    height: 100px;
     transform: translateY(-25px);
     
+   }
+
+   header {
+    height: auto;
+    padding: 10px;
    }
     .nav-menu.active {
         left: 0;
@@ -154,7 +173,27 @@ header {
     .hamburguer {
         display: flex;
     }
+
+    .quadro{
+      flex-direction: column;
+      padding: 0 15px;
+    }
+
+    .quadro1 {
+      margin: 15px 0;
+    }
+
+    .titulo h1 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+
   }
+
 
 
 
@@ -322,7 +361,8 @@ form input, form textarea {
 }
 
 form button {
-  width: 526px;
+  width: 100%;
+  max-width: 526px;
   padding: 12px;
   background-color: #fe6300;
   color: #fff;
