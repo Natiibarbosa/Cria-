@@ -1,3 +1,7 @@
+  html {
+    scroll-behavior: smooth;
+   }
+
 body {
     margin: 0;
     padding: 0;
@@ -6,72 +10,198 @@ body {
 
 
 header {
-    background-color: rgb(255, 255, 255);
-    height: 200px;
+    background-color: rgb(0, 0, 0);
+    height: 120px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-inline: 16px;
+    flex-wrap: wrap;
    }
 
   .logo {
     position: absolute;
     left: 0px;
-    height: 200px;
-    margin-top: -15px;
+    height: 300px;
+    margin-top: 110px;
 }
 
-.navegaçaolista{
+.navbar {
     display: flex;
     justify-content: flex-end;
     padding: 0px 20px 0px 20px;
-    max-width: 1800px;
-    margin: auto;
-    gap: 10px;
-   
+    align-items: center;
+    
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 23px;
+    padding-right: 35px;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+    
+}
+
+.nav-menu a::after {
+    content: "";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #ff2500, #ff7100);
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    transition: width 0.4s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.nav-menu a:hover {
+    color: #fe6300;
+}
+
+
+.hamburguer {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+    
+}
+
+
+.hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburguer.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+@media (max-width: 768px) {
+  
+  .nosso-time {
+    width: 100%; 
+    padding: 40px 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Faz os cards ocuparem quase toda a largura no mobile */
+    height: auto; /* Deixa a altura se ajustar automaticamente */
+  }
+
+
+    .nav-menu {
+        position: absolute;
+        top: 105px;
+        left: -100%;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+    }
+    .frase {
+      font-size: 1rem;
+      padding: 0 10px;
+      margin-top: 50px;
+   }
+
+   .logo {
+    width: 225px;
+    height: 200px;
+    transform: translateY(-25px);
+    
+   }
+    .nav-menu.active {
+        left: 0;
     }
 
-.lista {
-    padding: 15px;
-    font-size: 23px;
-    color: #ff6600;
-    font-weight: bold; 
-    cursor: pointer;
-    transition: 0.3s;
-}
+    .hamburguer {
+        display: flex;
+    }
+  }
 
-.lista:hover {
-    color: #000000fd;
-    border-bottom: 2px solid #b34700;
-}
+
+
+.nav-menu a:hover::after{
+  width: 50px;
+  }
+
+  .nav-menu a:hover{
+    color: #fe6300;
+  }
+
+  section {
+    scroll-margin-top: 110px;
+  }
 
 .frase h1 {
-    margin-top: 40px;
-    color: #ff6600;
+    margin-top: 10px;
+    color: #fafafa;
     font-weight: bold;
     font-style: italic;
     text-align: center;
-    font-size: 40px;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
  
  .linha-laranja {
     height: 4px;
-    background-color: rgb(255, 94, 0);
+    background-color: #fe6300;
     width: 100%;
+    margin-top: 120px;
   }
 
   .quadro {
     display: flex;
     margin: auto;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .quadro1 {
     flex: 70%;
-    background-color: #f4f4f4;
+    background-color: #ebebebe0;
     margin: 30px;
     border-radius: 15px;
 }
 
 .titulo {
-    color: rgb(255, 102, 0);
+    color: #fe6300;
     text-align: center;
     font-style: italic;
     font-size: 20px;
@@ -80,7 +210,7 @@ header {
  }
 
  .titulonosso {
-    color: rgb(255, 102, 0);
+    color: #ffffff;
     text-align: center;
     font-style: italic;
     font-size: 20px;
@@ -89,22 +219,24 @@ header {
  }
 
  p {
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
 
 .nosso-time {
-background-color: #f4f4f4;
+ background: linear-gradient(rgba(253, 125, 40, 0.6), rgba(255, 122, 33, 0.6)),
+    url('WhatsApp\ Image\ 2025-06-08\ at\ 17.35.21.jpeg') center/cover no-repeat;
 padding: 60px 20px;
 text-align: center;
-width: 1100px;
+width: 100%;
+max-width: 1100px;
 margin: auto;
 border-radius: 15px;
 }
 
-.nosso-time h2 {
-color: #e65c00;
+.nosso-time h2{
+color: #ffffff;
 font-size: 32px;
 margin-bottom: 40px;
 }
@@ -119,7 +251,7 @@ justify-content: center;
 .card {
 background: linear-gradient(to right, #fff5ef, #ffe0cc);
 border-radius: 15px;
-box-shadow: 0 0 10px rgba(0,0,0,0.08);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 padding: 20px;
 width: 220px;
 height: 200px;
@@ -136,7 +268,7 @@ height: 90px;
 object-fit: cover;
 border-radius: 50%;
 margin-bottom: 15px;
-border: 3px solid #e65c00;
+border: 3px solid #fe6300;
 }
 
 .card h3 {
@@ -146,7 +278,7 @@ margin-bottom: 8px;
 }
 
 .card p {
-color: #555;
+color: #000000;
 font-size: 14px;
 text-align: center;
 }
@@ -156,10 +288,14 @@ text-align: center;
   margin: 80px auto;
   padding: 20px;
   text-align: center;
-  color: rgb(255, 102, 0);
+  color: #fe6300;
   font-style: italic;
   font-size: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pfale {
+  text-align: center;
 }
 
 .contato h2 {
@@ -182,22 +318,25 @@ form input, form textarea {
   border-radius: 8px;
   font-size: 14px;
   resize: none;
+  
 }
 
 form button {
-  width: 100%;
+  width: 526px;
   padding: 12px;
-  background-color: #ff5e00;
+  background-color: #fe6300;
   color: #fff;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  
+  
 }
 
 form button:hover {
-  background-color: #c23f0b;
+  background-color: #ff5e00
 }
 
 .formulario {
@@ -207,11 +346,11 @@ form button:hover {
 
 footer {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   padding: 40px 20px;
   text-align: center;
   font-weight: bold;
-  margin-top: -50px;
+  margin-top: -70px;
 }
 
 .footer-container h3 {
@@ -255,11 +394,12 @@ footer {
 }
 
 .footer-social a:hover {
-  color: #ffd9b3;
+  color: #fe6300;
 }
 
 footer p {
   font-size: 13px;
   color: #f0f0f0;
+  text-align: center;
 }
 

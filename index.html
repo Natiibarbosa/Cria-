@@ -10,34 +10,44 @@
 </head>
 <body>
     <header>
-        <img src="4aece502-68b7-4074-b41d-2d37f93f1f65.png" alt="logo" class="logo">
-        <nav class="navegacao">
-            <div class="navegaçaolista">
-            <div class="lista">Inicio</div>
-            <div class="lista">Sobre Nós</div>
-            <div class="lista">Nosso Time</div>
-            <div class="lista">Fale Conosco</div>
-             </div>
-      </nav>
-      <div class="frase"> <h1 class="frase">Inovando marcas e revolucionando sonhos</h1>
+  <nav class="navbar">
+    <img src="logo-removebg-preview.png" alt="logo" class="logo">
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="#Inicio" class="nav-link">Início</a></li>
+      <li class="nav-item"><a href="#Sobre Nós" class="nav-link">Sobre Nós</a></li>
+      <li class="nav-item"><a href="#Nosso Time" class="nav-link">Nosso Time</a></li>
+      <li class="nav-item"><a href="#Fale Conosco" class="nav-link">Fale Conosco</a></li>
+    </ul>
+    <div class="hamburguer">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
     </div>
-    </header>
+  </nav>
+  <div class="frase"> 
+    <h1 class="frase">Inovando marcas e revolucionando sonhos</h1>
+  </div>
+</header>
   
      <div class="linha-laranja"></div>
      <main class="quadro">
-        <section class="quadro1">
+        <section id="Inicio" class="quadro1">
             <div class="titulo"> <h1>Bem vindo à Criaê</h1> </div>
-                <p>Seja bem-vindo à CriaAE — onde criatividade, propósito e transformação se encontram. Aqui, acreditamos no poder das ideias e no impacto que elas podem gerar quando ganham espaço para crescer. Nossa missão é clara: ajudar microempreendedores a alcançarem o próximo nível, com soluções profissionais em marketing digital, design e comunicação. Você chegou ao lugar certo para revolucionar sua marca. Bora criar?</p>
+                <p>Seja bem-vindo à CRIAÊ— o ponto de encontro entre criatividade, propósito e transformação real. Aqui, acreditamos que toda ideia tem potencial para se tornar algo grandioso, desde que tenha o espaço, o suporte e a estratégia certos para florescer. Nossa missão é clara: ajudar microempreendedores e pequenos negócios a alcançarem o próximo nível, oferecendo soluções completas e acessíveis em marketing digital, design e comunicação.
+                Sabemos que empreender é um desafio, especialmente nas periferias mas estamos aqui para tornar essa jornada mais leve, estratégica e transformadora. Seja para criar uma identidade visual impactante, planejar conteúdos para as redes sociais ou desenvolver um site profissional, você está no lugar certo para revolucionar sua marca.
+                <strong> Bora criar o futuro do seu negócio juntos?</strong> </p>
         </section>
      </main>
      <main class="quadro">
-        <section class="quadro1">
+        <section id="Sobre Nós" class="quadro1">
             <div class="titulo"><h1>Sobre nós</h1></div>
-            <p>A CriaAE nasceu da favela, com a missão de impulsionar negócios que, muitas vezes, são invisibilizados. Somos uma agência formada por cinco jovens estudantes que acreditam no potencial de quem empreende, especialmente nas periferias. Cuidamos da sua presença online com estratégia, identidade e muita criatividade. Do Instagram ao seu site, nossa meta é fazer sua marca crescer de verdade. A gente não entrega só serviços a gente entrega possibilidades.</p>
+            <p>A CRIAÊ é uma agência formada por cinco estudantes dedicados a ajudar microempreendedores, principalmente de comunidades, a crescerem e se destacarem no mundo digital. Nosso foco é criar identidades visuais impactantes e oferecer soluções completas, como criação de sites, gerenciamento de redes sociais, design de logos e desenvolvimento de identidade visual, sempre atentos às necessidades únicas de cada microempreendedor. Nosso diferencial está na união entre criatividade e colaboração: cada membro do time atua em uma área, social media, design, programação, mas trabalhamos juntos para garantir as melhores entregas, sem sobrecarregar ninguém.
+           Mais que uma agência, somos a ponte entre o que sua marca é hoje e o que ela pode se tornar amanhã. Atuamos com estratégia, identidade e criatividade para fortalecer sua presença digital e tornar seu negócio reconhecido.
+           Acreditamos que todo negócio merece brilhar, por isso seguimos a missão de “Inovar Marcas e Revolucionar Sonhos”. Não entregamos apenas serviços, entregamos possibilidades, visibilidade e pertencimento porque comunicar bem é resistir, crescer e conquistar. E isso fazemos com você, não por você.</p>
         </section>
      </main>
        
-     <section class="nosso-time">
+     <section id="Nosso Time" class="nosso-time">
           <div class="titulonosso"><h1>Nosso Time</h1></div>
     <div class="cards">
      <div class="card">
@@ -68,9 +78,9 @@
 </section>
 
 <main class="formulario">
-<section class="titulof">
+<section id="Fale Conosco" class="titulof">
     <h1>Fale conosco</h1>
-    <p>Estamos aqui para transformar suas ideias em realidade. Preencha o formulário abaixo e vamos conversar!</p>
+    <p class="pfale"> Estamos aqui para transformar suas ideias em realidade. Preencha o formulário abaixo e vamos conversar!</p>
 
     <form action="#" method="post">
       <input type="text" placeholder="Seu nome" required>
@@ -83,8 +93,8 @@
  
 <footer>
   <div class="footer-container">
-    <h3>Criaê</h3>
-    <p>Revolucionando sonhos com criatividade e propósito.</p>
+    <h3>CRIAÊ</h3>
+    <p class="pfale">Revolucionando sonhos com criatividade e propósito.</p>
 
     <ul class="footer-links">
       <li><a href="#sobre">Sobre</a></li>
@@ -99,12 +109,12 @@
     </div>
 
     <p class="copyright">
-      &copy; 2025 Criaê. Todos os direitos reservados.
+      &copy; 2025 CRIAÊ. Todos os direitos reservados.
     </p>
   </div>
 </footer>
 
-   
+    <script src="app.js"></script>
 
 </body>
 </html>
