@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
+    overflow-x: hidden;
 }
 
 
@@ -25,6 +26,7 @@ header {
     left: 0px;
     height: 300px;
     margin-top: 110px;
+    display: none;
 }
 
 .navbar {
@@ -106,18 +108,16 @@ header {
 
 
 @media (max-width: 768px) {
-
-  form {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
   
-  form input, form textarea {
-    width: 100%;
-    box-sizing: border-box;
+
+  .logo {
+    display: block;
+    width: 120px;
+    margin: 0 auto 20px auto;
+  }
+
+  header {
+    text-align: center;
   }
   .nosso-time {
     width: 100%; 
@@ -127,55 +127,14 @@ header {
   .cards {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
   }
- 
+
   .card {
     width: 90%; /* Faz os cards ocuparem quase toda a largura no mobile */
     height: auto; /* Deixa a altura se ajustar automaticamente */
   }
 
-   .frase {
-    text-align: center;
-    
-    padding: 10px;
-   }
-    
-   footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-   }
 
-   .logo-mobile-container {
-
-    display: block;
-
-    text-align: center;
-
-    margin-top: 20px;
-
-  }
-
-
-
-  .logo-mobile {
-
-    width: 150px;
-
-    height: auto;
-
-  }
-
-.logo-mobile-container {
-
-  display: none;
-}
-
-   .frase h1 {
-    font-size: 1.3rem;
-   }
     .nav-menu {
         position: absolute;
         top: 105px;
@@ -188,11 +147,6 @@ header {
         text-align: center;
         transition: left 0.3s ease-in-out;
     }
-
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
     .frase {
       font-size: 1rem;
       padding: 0 10px;
@@ -201,14 +155,9 @@ header {
 
    .logo {
     width: 225px;
-    height: 100px;
+    height: 200px;
     transform: translateY(-25px);
     
-   }
-
-   header {
-    height: auto;
-    padding: 10px;
    }
     .nav-menu.active {
         left: 0;
@@ -217,27 +166,7 @@ header {
     .hamburguer {
         display: flex;
     }
-
-    .quadro{
-      flex-direction: column;
-      padding: 0 15px;
-    }
-
-    .quadro1 {
-      margin: 15px 0;
-    }
-
-    .titulo h1 {
-      font-size: 1.4rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
-
-
   }
-
 
 
 
@@ -405,8 +334,7 @@ form input, form textarea {
 }
 
 form button {
-  width: 100%;
-  max-width: 526px;
+  width: 526px;
   padding: 12px;
   background-color: #fe6300;
   color: #fff;
