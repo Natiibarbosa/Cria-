@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    overflow-x: hidden;
 }
 
 
@@ -26,7 +25,10 @@ header {
     left: 0px;
     height: 300px;
     margin-top: 110px;
-    display: none;
+}
+
+.logo-mobile {
+  display: none;
 }
 
 .navbar {
@@ -108,17 +110,29 @@ header {
 
 
 @media (max-width: 768px) {
+
+.logo {
+  display: none;
+}
+
+.logo-mobile {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 10px auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.frase {
+  text-align: center;
+  padding: 0 10px;
+}
+
+
   
-
-  .logo {
-    display: block;
-    width: 120px;
-    margin: 0 auto 20px auto;
-  }
-
-  header {
-    text-align: center;
-  }
   .nosso-time {
     width: 100%; 
     padding: 40px 10px;
