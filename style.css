@@ -429,6 +429,10 @@ height: 210px;
   }
 
   footer {
-    width: 400px
+    height: 120px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 }
