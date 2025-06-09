@@ -16,8 +16,7 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    padding-inline: 16px;
-    flex-wrap: wrap;
+  
    }
 
   .logo {
@@ -25,10 +24,6 @@ header {
     left: 0px;
     height: 300px;
     margin-top: 110px;
-}
-
-.logo-mobile {
-  display: none;
 }
 
 .navbar {
@@ -43,12 +38,12 @@ header {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 30px;
+    gap: 15px;
     
 }
 
 .nav-menu a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 23px;
     padding-right: 35px;
@@ -59,7 +54,7 @@ header {
 }
 
 .nav-menu a::after {
-    content: "";
+    content: " ";
     width: 0px;
     height: 4px;
     background-image: linear-gradient(45deg, #ff2500, #ff7100);
@@ -107,81 +102,6 @@ header {
 .hamburguer.active .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
 }
-
-
-@media (max-width: 768px) {
-
-.logo {
-  display: none;
-}
-
-.logo-mobile {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin: 10px auto;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.frase {
-  text-align: center;
-  padding: 0 10px;
-}
-
-
-  
-  .nosso-time {
-    width: 100%; 
-    padding: 40px 10px;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%; /* Faz os cards ocuparem quase toda a largura no mobile */
-    height: auto; /* Deixa a altura se ajustar automaticamente */
-  }
-
-
-    .nav-menu {
-        position: absolute;
-        top: 105px;
-        left: -100%;
-        width: 100%;
-        background-color: #000;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0;
-        text-align: center;
-        transition: left 0.3s ease-in-out;
-    }
-    .frase {
-      font-size: 1rem;
-      padding: 0 10px;
-      margin-top: 50px;
-   }
-
-   .logo {
-    width: 225px;
-    height: 200px;
-    transform: translateY(-25px);
-    
-   }
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .hamburguer {
-        display: flex;
-    }
-  }
-
 
 
 .nav-menu a:hover::after{
@@ -249,16 +169,24 @@ body {
     font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
+ 
+
+ .textos  {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
 
 .nosso-time {
  background: linear-gradient(rgba(253, 125, 40, 0.6), rgba(255, 122, 33, 0.6)),
-    url('WhatsApp\ Image\ 2025-06-08\ at\ 17.35.21.jpeg') center/cover no-repeat;
-padding: 60px 20px;
+  url('WhatsApp\ Image\ 2025-06-08\ at\ 17.35.21.jpeg') center/cover no-repeat;
+padding: 40px 20px;
 text-align: center;
 width: 100%;
 max-width: 1100px;
 margin: auto;
-border-radius: 15px;
+border-radius: 15px
 }
 
 .nosso-time h2{
@@ -272,16 +200,18 @@ display: flex;
 flex-wrap: wrap;
 gap: 30px;
 justify-content: center;
+
 }
 
 .card {
-background: linear-gradient(to right, #fff5ef, #ffe0cc);
+background-color: #f3f1f1;
 border-radius: 15px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
 padding: 20px;
 width: 220px;
 height: 200px;
 transition: transform 0.3s ease;
+
 }
 
 .card:hover {
@@ -337,8 +267,8 @@ text-align: center;
 }
 
 form input, form textarea {
-  width: 100%;
-  padding: 12px;
+  width: 400px;
+  padding: 8px;
   margin-bottom: 15px;
   border: 1px solid #ff5100;
   border-radius: 8px;
@@ -348,7 +278,7 @@ form input, form textarea {
 }
 
 form button {
-  width: 526px;
+  width: 350px;
   padding: 12px;
   background-color: #fe6300;
   color: #fff;
@@ -429,3 +359,73 @@ footer p {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  
+  .nav-menu {
+  position: absolute;
+  top: 105px;
+  left: -100%;
+  width: 100%;
+  background-color: #000000;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
+  transition: left 0.3s ease-in-out;
+    } 
+
+    .nav-menu a {
+      text-align: center;
+      left: 15px;
+      right: -15px;
+    }
+  
+    .nav-menu a::after {
+      display: none;
+    }
+   
+
+.nosso-time {
+border-radius: 0px;
+padding: 40px 5px;
+}
+
+.cards {
+gap: 30px;
+justify-content: center;
+padding: 20px 50px;
+}
+
+.card {
+border-radius: 15px;
+padding: 2px;
+width: 230px;
+height: 210px;
+}
+
+  .logo {
+    width: 225px;
+    height: 200px;
+    transform: translateY(-10px);
+    left: 25%;
+ }
+
+    
+  .frase h1 {
+  font-size: 1.3rem;
+  margin-top: 50px;
+  text-align: center;
+  padding-right: 50px 50px;
+  }
+
+  .nav-menu.active {
+   left: 0;
+    }
+
+ .hamburguer {
+  display: flex;
+    }
+
+  form input, form textarea {
+  width: 350px;
+}
+}
