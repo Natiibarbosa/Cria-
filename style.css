@@ -430,9 +430,6 @@ height: 210px;
 }
 
 footer {
- width: 55vh;
- margin: 0;
- padding: 20px;
-  
+ width: 50vh; 
 }
 }
