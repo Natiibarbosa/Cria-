@@ -382,6 +382,13 @@ footer p {
     .nav-menu a::after {
       display: none;
     }
+
+  .frase h1 {
+  font-size: 1.0rem;
+  margin-top: 50px;
+  text-align: center;
+  padding-right: 50px 50px;
+  }
    
 
 .nosso-time {
@@ -409,13 +416,6 @@ height: 210px;
     left: 25%;
  }
 
-    
-  .frase h1 {
-  font-size: 0.8rem;
-  margin-top: 50px;
-  text-align: center;
-  padding-right: 50px 50px;
-  }
 
   .nav-menu.active {
    left: 0;
@@ -428,8 +428,8 @@ height: 210px;
   form input, form textarea {
   width: 350px;
   }
-
+  
   footer {
-    width: 60vh;
+    width: 50vh;
 }
 }
