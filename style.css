@@ -1,4 +1,4 @@
-  html {
+html {
     scroll-behavior: smooth;
    }
 
@@ -306,7 +306,7 @@ footer {
   padding: 40px 20px;
   text-align: center;
   font-weight: bold;
-  margin-top: -70px; 
+  margin-top: -70px;
 }
 
 .footer-container h3 {
@@ -411,7 +411,7 @@ height: 210px;
 
     
   .frase h1 {
-  font-size: 1.0rem;
+  font-size: 1.3rem;
   margin-top: 50px;
   text-align: center;
   padding-right: 50px 50px;
